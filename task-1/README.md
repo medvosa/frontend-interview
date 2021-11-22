@@ -40,4 +40,4 @@ y>0 - вверх (индекс - 2)
 
 Также `VECTOR_NAME.indexOf(v)` - неверная кончтрукиця, так как v уже индекс. Надо написать `VECTOR_NAME[v]`
 
-ИТОГО `VECTOR_NAME=['left','down','up','right']
+ИТОГО `VECTOR_NAME=['left','down','up','right']`
