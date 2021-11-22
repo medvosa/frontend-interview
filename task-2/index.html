@@ -21,6 +21,7 @@
 <template id="calc-tpl">
     <div>
         <ul>
+<!--           {{items}} -->
             <li v-for="(item, i) in items" :key="i">
                 {{item.name}}, остаток: {{item.rest}}
             </li>
@@ -81,7 +82,8 @@
       deleteItem () {
         this.deleted = _.remove(this.items, function (el) {
           return el.rest === 0
-        })
+        });
+        this.items = [...this.items];
       }
     }
   })
